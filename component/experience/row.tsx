@@ -107,7 +107,9 @@ function createWorkingPeriod(startedAtString: string, endedAtString?: string, lo
         ) : (
           ''
         )}
-        <Badge color="info">{Util.getFormattingDuration(startedAt, endedAt)}</Badge><br/>
+        <Badge color="info">{Util.getFormattingDuration(startedAt, endedAt)}</Badge>
+        <br />
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
         <img src={logoImage} width={200} />
       </Col>
     </Row>
